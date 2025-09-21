@@ -296,11 +296,11 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-    min-width: 300px;
+    min-width: 100px;
 } 
 
 .about-image img {
-    width: 100%;
+    width: 60%;
     max-width: 400px;
     border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -381,6 +381,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     margin-top: 3rem;
+    align-items: start; /* Align to top instead of stretch */
 } 
 
 .contact-form-container {
@@ -390,10 +391,21 @@ body {
     padding: 2rem;
     backdrop-filter: blur(10px);
 } 
+.contact-form-container,
+.contact-details {
+    height: 600px; /* Set same fixed height for both */
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
 
 .contact-form {
-    display: flex; 
-    flex-direction: column; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 } 
 
 .form-controls {
