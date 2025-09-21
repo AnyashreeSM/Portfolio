@@ -1,0 +1,475 @@
+/* used to import the font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Header Navbar Styles */
+.navbar{
+    z-index: 1000; /* ensures navbar is above everything */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    background: linear-gradient(135deg, #1B1B3A, #3E1E68, #00D1FF);
+    background-color: transparent; 
+}
+
+.logo{ /*dont know why its neede */
+      padding: 0 5rem;
+}
+
+.logo .logo-heading { /*dont know why its neede */
+   color: #35A99C;
+   text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+
+} 
+
+.headings{ /* or accent color */
+color: #00D1FF;
+border-radius: 8px;}
+
+
+.cross-icon{
+    display: none;
+}
+
+.hamburger {  /*dont know why its neede */
+    display: none; 
+    color: #fff; 
+    font-size: 25px; 
+} 
+.menu {  /*dont know why its neede */
+    padding: 0 5rem; 
+} 
+
+.menu .menu-list { /* display in row*/
+    display: flex; 
+    list-style: none; 
+} 
+.menu-list .menu-list-items { /*dont know why its neede */
+    padding: 0.5rem 1rem; 
+}
+
+/* used to make it available for all screen */
+@media screen and (min-width: 856px) and (max-width: 1024px) { 
+    .menu-list .menu-list-items { 
+        padding: 0.5rem 0.3rem; 
+    } 
+}
+
+
+/* Main Hero Section Styles */
+.hero {
+  background-image: url('image/girl-working.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 0 5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  background-image: linear-gradient(135deg, #1B1B3A, #2A0845, #431C63); /* fallback background */
+}
+
+
+
+.hero .intro { 
+    text-align: center; 
+    margin: 0 5rem; 
+} 
+
+.hero .intro-buttons { 
+    margin: 2rem 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+} 
+
+/* About section styles */
+
+.about { 
+    display: flex; 
+    align-items: center; 
+    background-image: linear-gradient(45deg, #363D73, #2794B3); 
+    justify-content: space-between; 
+    width: 100%; 
+} 
+.about .about-text { 
+    width: 450px; 
+    color: #fff; 
+    padding: 5rem 1rem 5rem 5rem; 
+} 
+.about .about-image img { 
+    height: 400px; 
+    width: 450px; 
+    padding: 5rem 5rem 5rem 1rem; 
+} 
+
+/* end of about*/
+
+
+
+
+
+
+/* Projects section styles */
+.port-card {
+    position: relative;
+  z-index: 1; /* keep cards below navbar */
+  flex: 1 1 250px;       /* flexible basis of 250px */
+  max-width: 300px;      /* optional: prevent cards from becoming too wide */
+  min-width: 200px;      /* allows better wrapping */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.port-card:hover {
+  transform: scale(1.05);
+  z-index: 2; /* hover lifts slightly but still below navbar */
+}
+
+
+
+
+
+
+.portfolio { 
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+} 
+
+
+
+.port-card .image { 
+    width: 100%; 
+} 
+
+.port-card .image img { 
+    height: 200px; 
+    width: 100%; 
+    border-top-right-radius: 20px; 
+    border-top-left-radius: 20px; 
+} 
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+
+
+/* End of Project section*/
+
+/* Services section styles */
+.services { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+} 
+
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;          /* allows cards to go to next line if needed */
+  justify-content: center;  /* center the cards */
+  gap: 2rem;                /* space between cards */
+}
+
+.my-col {
+  flex: 1 1 300px;          /* each card grows, min width 300px */
+  max-width: 32%;           /* max 3 cards in a row */
+  box-sizing: border-box;   /* padding included in width */
+  display: flex;            /* cards stretch to same height */
+}
+.my-card { 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 20px; 
+    background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
+    padding: 1rem; 
+} 
+.icon { 
+    height: 100px; 
+    width: 100px; 
+    border-radius: 50%; 
+    background-color: #363D73; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+
+
+.my-card:hover {
+  transform: scale(1.05);
+}
+
+
+.icon svg { 
+    font-size: 30px; 
+    color: #fff; 
+} 
+
+
+/* Contact section styles */
+.contact { 
+    padding: 0 5rem; 
+} 
+
+.contact-content { 
+    display: flex; 
+    margin: 3rem 0; 
+    justify-content: space-between; 
+} 
+
+.contact-form-container { 
+    width: 50%; 
+} 
+
+.contact-form { 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+.contact-form .form-controls { 
+    width: 80%; 
+    padding: 10px 0; 
+    margin: 1.67rem 0; 
+} 
+
+.contact-form .form-btn { 
+    width: 83%; 
+} 
+
+.contact-details { 
+    width: 50%; 
+} 
+
+
+/* Portfolio section styles */
+.portfolio { 
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+    
+} 
+
+.port-card { 
+    padding: 0 !important; 
+    background: none !important; 
+    border: 2px solid #000; 
+    
+} 
+
+.port-card .image { 
+    width: 100%; 
+    
+} 
+
+.port-card .image img { 
+    height: 200px; 
+    width: 100%; 
+    border-top-right-radius: 20px; 
+    border-top-left-radius: 20px; 
+   
+} 
+
+.service-card {
+  flex: 1 1 250px; /* allow flexibility but minimum width of 250px */
+  max-width: 300px; /* keep them uniform in width */
+  height: 500px; /* fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start; /* top-align content */
+  text-align: center;
+  background: linear-gradient(135deg, #7de2fc, #b9b6e5);
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+
+.service-card .icon {
+  font-size: 50px;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+
+/* Footer Styles */
+.footer { 
+    background-color: #000; 
+    color: #fff; 
+    padding: 2rem; 
+} 
+
+.footer-list-items { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 50px; 
+    width: 50px; 
+    margin: 1rem 1rem 0 1rem; 
+    border-radius: 50%; 
+    background-color: #53C8B6; 
+} 
+
+.footer-links { 
+    font-size: 24px; 
+    color: #fff; 
+    text-decoration: none; 
+} 
+
+.social-links { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+
+.footer-menu { 
+    padding: 0 5rem; 
+} 
+
+.footer-menu .footer-menu-list { 
+    display: flex; 
+    list-style: none; 
+} 
+
+
+/* utility classes */
+.greet-heading { 
+    font-size: 1.3rem; 
+    font-weight: lighter; 
+    margin: 0; 
+    letter-spacing: 1px; 
+} 
+
+.my-heading { 
+    font-size: 2.5rem; 
+    margin: 0; 
+} 
+
+.sub-heading { 
+    margin: 0; 
+    font-size: 0.8rem; 
+    color: #ccc; 
+    font-weight: lighter; 
+} 
+
+.links:hover { 
+    border-bottom: 2px solid #fff; 
+} 
+
+.links { 
+    border-bottom: 2px solid transparent; 
+    transition: all 0.25s; 
+    padding: 5px; 
+    text-decoration: none; 
+    color: #fff; 
+} 
+
+.btn { 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    letter-spacing: 1px; 
+    border: none; 
+} 
+
+.common-btn { 
+    background-color: #35A99C; 
+    color: #fff; 
+    border: 2px solid #35A99C; 
+    transition: all 0.25s; 
+} 
+
+.common-btn:hover { 
+    background-color: #fff; 
+    color: #35A99C; 
+    border: 2px solid #35A99C; 
+    outline: none; 
+} 
+
+.ghost-btn { 
+    background-color: #fff; 
+    color: #35A99C; 
+    border: 2px solid #35A99C; 
+    outline: none; 
+} 
+
+.ghost-btn:hover { 
+    background-color: #35A99C; 
+    color: #fff; 
+    transition: all 0.25s; 
+    border: 2px solid #35A99C; 
+} 
+
+.heading-span { 
+    font-weight: bolder; 
+} 
+
+.text-center { 
+    text-align: center; 
+} 
+
+.small-para { 
+    font-size: 14px; 
+    color: #fff; 
+} 
+
+.white-text { 
+    color: #fff; 
+} 
+
+.blue-text { 
+    color: #363D73; 
+
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    background: linear-gradient(135deg, #1B1B3A, #3E1E68, #00D1FF);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.intro {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-animation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+
+
+

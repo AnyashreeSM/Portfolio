@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title> 
+    <!--is used to import the "Poppins" font from Google Fonts into your CSS file so you can use it in your website. -->
+    <link rel="stylesheet"
+        href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity= 
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</head>
+
+<body>
+    
+     <script src="script.js"></script> 
+     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <header class="header"> 
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Anyashree S M</h2>
+            </div>
+            <div class="hero-right">
+    
+
+            </div>
+            <div class="hamburger" id="hamburger"> <!--why its used-->
+                <i class="fas fa-bars hamburger-icon"></i> 
+                <i class="fas fa-times cross-icon"></i> 
+            </div> 
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a class="links" href="#home">Home</a></li>
+                    <li class="menu-list-item"><a class="links" href="#projects">Project's</a></li>
+                    <li class="menu-list-item"><a class="links" href="#about">About</a></li>
+                    <li class="menu-list-item"><a class="links" href="#services">Services</a></li>
+                    <li class="menu-list-item"><a class="links" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>
+
+    <!-- Home section -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Anyashree S M</h1>
+                <h4 class="sub-heading"> Aspiring Full Stack Developer (PERN).</h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Hire Me</button>
+                <button class="btn ghost-btn">Get Resume</button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+    <lottie-player
+      src="https://assets10.lottiefiles.com/packages/lf20_1pxqjqps.json"
+      background="transparent"
+      speed="1"
+      style="width: 350px; height: 350px;"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+    </section>
+
+
+
+
+
+    <!-- Portfolio section -->
+<section id="projects" class="projects">
+    <div class="portfolio-heading"> 
+            <h1 class="my-heading text-center">My Project's</h1> 
+        </div> 
+    <div class="portfolio-container">
+        
+  <div class="port-card">
+    <div class="image">
+      <img src="image/m.jpg" alt="portfolio">
+    </div>
+    <h3 class="greet-heading blue-text">My Portfolio Website</h3>
+    <p class="small-para blue-text">HTML, CSS, JavaScript</p>
+  </div>
+
+  <div class="port-card">
+    <div class="image">
+      <img src="image/c.jpg" alt="todo app">
+    </div>
+    <h3 class="greet-heading blue-text">To-Do App (In Progress)</h3>
+    <p class="small-para blue-text">Learning React & Tailwind CSS</p>
+  </div>
+
+  <div class="port-card">
+    <div class="image">
+      <img src="image/d.jpg" alt="AI Chatbot">
+    </div>
+    <h3 class="greet-heading blue-text">AI Chatbot (Planned)</h3>
+    <p class="small-para blue-text">Exploring OpenAI API integration</p>
+  </div>
+
+  <div class="port-card">
+    <div class="image">
+      <img src="image/2.jpg" alt="form project">
+    </div>
+    <h3 class="greet-heading blue-text">Basic Form Project</h3>
+    <p class="small-para blue-text">HTML, CSS, JavaScript validation</p>
+  </div>
+
+  <div class="port-card">
+    <div class="image">
+      <img src="image/bg-home2.jpg" alt="form project">
+    </div>
+    <h3 class="greet-heading blue-text">Form Project</h3>
+    <p class="small-para blue-text"> JavaScript validation</p>
+  </div>
+
+
+ 
+
+</div>
+</section>
+
+
+    <!--About Section-->
+    <section id="about" class="about">
+        <div  class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para"> I’m an aspiring Full Stack Developer focused on building robust,
+                 scalable web applications using the PERN stack
+                  (PostgreSQL, Express.js, React, Node.js). With a background in multiple programming languages including 
+                  Java, Python, C, and C++,
+                  I’m working toward crafting clean,
+                 efficient code and seamless user experiences.
+            </p>
+            <p> I am also exploring how AI can enhance the capabilities of
+                 web apps—from personalized recommendations to smarter
+                  automation. As a passionate learner, I am constantly 
+                  evolving my skill set to meet the demands of modern 
+                  web development and technology trends.
+             </p> 
+
+        </div>
+        <div class="about-image">
+           <img src="/image/e.jpg" >
+        </div>
+    </section>
+
+
+
+
+
+    <!--Service section-->
+
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">My Services</h1>
+        </div>
+        
+    <div class="services-content">
+            
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                             <i class="fas fa-paint-brush"></i>  
+                        </div>
+                        <h3 class="greet-heading blue-text">Frontend Development</h3>
+                        <p class="small-para">Crafting responsive and user-friendly 
+                            interfaces using HTML, CSS, and React.js.
+                        Focused on creating smooth user experiences 
+                        and interactive UI designs.</p>
+                        <p class="small-para">I use modern JavaScript and component-based
+                             architecture to build scalable frontend solutions. 
+                        Accessibility and performance are key 
+                        priorities in my work. </p>
+                    </div>
+                </div>
+            
+          
+              <div class="my-col">
+                <div class="my-card">
+                    <div class="icon">
+                       <i class="fa-solid fa-code"></i> 
+                    </div>
+                    <h3 class="greet-heading blue-text">Backend Development</h3>
+                    <p class="small-para">Building robust and secure backend systems
+                         with Node.js, Express.js, and PostgreSQL.
+                        RESTful APIs, authentication, and middleware 
+                        logic are handled efficiently. </p>
+                        <p class="small-para">
+                             My backend solutions are designed for scalability, modularity, 
+                             and integration with frontend apps and databases. 
+                        </p>
+                </div>
+              </div>
+           
+           
+            <div  class="my-col">
+                <div class="my-card">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i> </div>
+                        <h3 class="greet-heading blue-text">AI Integration</h3>
+                        <p class="small-para">Exploring how AI/ML models can be integrated 
+                            into web apps to deliver smarter user experiences. 
+                        OpenAI, Google AI tools, and APIs are my
+                         starting point. </p>
+
+                         <p class="small-para">
+                            AI is used for personalization, chatbots, content generation, 
+                            and intelligent suggestions in web applications. 
+                         </p>
+                    
+                   
+                </div>
+            </div>
+          
+        
+        
+            <div class="my-col">
+                <div class="my-card">
+                    <div class="icon"> 
+                            <i class="fas fa-quote-left"></i> 
+                        </div>
+                    <h3 class="greet-heading blue-text">Database Design</h3>
+                        <p class="small-para">Experience with designing efficient relational databases using PostgreSQL and MySQL. 
+                        I ensure data integrity, security, and optim
+                        ized queries.</p>
+                        <p  class="small-para">I can normalize schemas, define relationships, 
+                            and manage CRUD operations with backend APIs. </p>
+                </div>
+            </div>
+       
+     
+      <div class="my-col">
+        <div  class="my-card">
+            <div class="icon"> 
+                 <i class="fab fa-wordpress-simple"></i> 
+            </div> 
+        
+             <h3  class="greet-heading blue-text">Deployment & DevOps</h3>
+             <p class="small-para">
+               Deploying fullstack apps on platforms like Vercel, Netlify, and Render.
+                 Comfortable using GitHub, CI/CD pipelines, and environment configuration. 
+             </p>
+              <p class="small-para">
+                  I also have basic knowledge of Docker, cloud services (GCP), and maintaining deployment-ready repositories. 
+              </p>
+        </div>
+       </div>
+ 
+ 
+       <div class="my-col">
+          <div  class="my-card">
+              <div class="icon">
+                 <i class="fas fa-video"></i> 
+                 </div> 
+               <h3 class="greet-heading blue-text">Testing & Debugging</h3>
+               <p class="small-para">
+                 I write clean, testable code and debug using browser dev tools and Node.js error handling. 
+                  Familiar with tools like Postman and Chrome DevTools. 
+                      </p>
+                      <p class="small-para">
+                 Automated testing and error tracking ensure application reliability an
+
+          </div>
+      </div>
+    </div>
+   </section>
+ <!-- Contact me section -->
+    <section class="contact" id="contact"> 
+        <div class="contact-heading"> 
+            <h1 class="my-heading text-center">Contact Me</h1> 
+        </div> 
+        <div class="contact-content"> 
+            <div class="contact-form-container"> 
+                <h1 class="greet-heading">Get In Touch</h1> 
+                <form class="contact-form"> 
+                    <input class="form-controls" type="text"
+                        placeholder="Your Name"> 
+                    <input class="form-controls" type="text"
+                        placeholder="Your Email"> 
+                    <input class="form-controls" type="text"
+                        placeholder="Your Phone"> 
+                    <textarea class="form-controls"
+                            placeholder="Write your message"
+                            name="message" id="" cols="30"
+                            rows="10"> 
+                    </textarea> 
+                    <input class="form-btn btn common-btn"
+                        type="submit" value="Send Message"> 
+                </form> 
+            </div> 
+            <div class="contact-details"> 
+                <h1 class="greet-heading">My Contact Details</h1> 
+                <div class="details"> 
+                    <h5 class="contact-heading">EMAIL</h5> 
+                    <p class="contact-text">anyashreesm@gmail.com</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">PHONE</h5> 
+                    <p class="contact-text">+91 0123456789</p> 
+                </div> 
+               
+            
+            </div> 
+        </div> 
+    </section> 
+
+    <!--footer section-->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4> © 2025 Anyashree S M | Fullstack Developer Portfolio</h4>
+           <div class="social-links"> 
+                <div class="footer-menu"> 
+                    <ul class="footer-menu-list"> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-facebook-f"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-twitter"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-instagram"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-linkedin-in"></i> 
+                            </a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
+</body>
+</html>
