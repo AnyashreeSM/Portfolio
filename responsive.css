@@ -48,7 +48,10 @@
 /* Mobile Navigation */
 @media screen and (max-width: 768px) {
     .hamburger { 
-        display: block; 
+        display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
         padding: 0 2rem; 
     } 
 
@@ -68,7 +71,7 @@
     } 
 
     .menu.active {
-        display: block;
+        display: flex; /* show menu when active */
     }
 
     .menu-list { 
@@ -337,3 +340,6 @@
         margin: 0.8rem 0 1.2rem 0;
     }
 }
+
+
+
