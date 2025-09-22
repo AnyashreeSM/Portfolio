@@ -686,3 +686,8 @@ textarea.form-controls {
         transform: scale(1);
     }
 }
+
+
+.hidden {
+    display: none;
+}

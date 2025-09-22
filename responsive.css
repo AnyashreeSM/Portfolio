@@ -3,11 +3,11 @@
 /* Tablet Styles */
 @media screen and (min-width: 768px) and (max-width: 1024px) { 
     .navbar {
-        padding: 1rem;
+       padding: 0.8rem 1rem; /* Reduced padding */
     }
     
     .logo { 
-        padding: 0 2rem; 
+         padding: 0; /* Remove extra padding */
     } 
 
     .menu {
@@ -107,82 +107,92 @@
     .hero { 
         flex-direction: column;
         text-align: center;
-        padding: 2rem 1rem;
-        min-height: 90vh;
-        gap: 2rem;
+         padding: 100px 1rem 2rem 1rem !important; /* Reduced top padding from 140px to 100px */
+        min-height: 85vh; /* Reduced from 90vh */
+        gap: 1.5rem; /* Reduced gap */
     }
 
     .intro {
         max-width: 100%;
         text-align: center;
         order: 1;
+        margin-bottom: 1rem; /* Reduced margin */
     }
 
     .hero-right {
         order: 2;
         max-width: 100%;
+         margin-top: 0; /* Remove extra margin */
     }
 
     .hero-right lottie-player {
-        max-width: 280px;
+        max-width: 250px; /* Slightly smaller */
+        height: 300px !important; /* Fixed height */
     }
 
     .intro-buttons { 
         gap: 1rem;
         justify-content: center;
         flex-wrap: wrap;
+         margin: 1.5rem 0; /* Reduced margin */
     } 
 
     .btn { 
-        padding: 0.75rem 1.5rem;
+        padding: 0.7rem 1.5rem;
         font-size: 0.9rem;
     }
 
     /* Projects Mobile */
-    .projects {
-        padding: 3rem 1rem;
-    }
-
+    
     .portfolio-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        margin-top: 2rem; /* Reduced margin */
     }
 
     /* About Mobile */
     .about { 
         flex-direction: column;
-        padding: 3rem 1rem;
+        padding: 2.5rem 1rem; /* Reduced padding */
         text-align: center;
         gap: 2rem;
+        
     } 
 
     .about-text { 
         width: 100%;
         order: 2;
+         order: 1; /* Text comes first */
     } 
 
     .about-image {
-        order: 1;
+        order: 2;
         max-width: 100%;
     }
 
     .about-image img { 
-        width: 90%;
-        max-width: 300px;
-    } 
+        width: 80%; /* Slightly smaller */
+        max-width: 280px; /* Reduced max width */
+        border-radius: 15px;
+    }
+    .projects {
+        padding: 2.5rem 1rem; /* Reduced padding */
+    }
+ 
 
     /* Services Mobile */
     .services { 
-        padding: 3rem 1rem; 
+       padding: 2.5rem 1rem; /* Reduced padding */
     } 
 
     .services-content {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+         margin-top: 2rem; /* Reduced margin */
     }
 
     .my-card {
-        padding: 1.5rem;
+       padding: 2.5rem 1rem; /* Reduced padding */
     }
 
     /* Contact Mobile */
@@ -192,12 +202,15 @@
 
     .contact-content { 
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem; /* Reduced gap */
+        margin-top: 2rem; /* Reduced margin */
     } 
 
     .contact-form-container,
     .contact-details { 
         width: 100%;
+        height: auto; /* Remove fixed height for mobile */
+        min-height: 400px; /* Set minimum height instead */
     } 
 
     /* Footer Mobile */
@@ -250,22 +263,27 @@
 /* Very Small Mobile */
 @media screen and (max-width: 480px) {
     .hero {
-        padding: 1rem;
+        padding: 90px 0.8rem 1.5rem 0.8rem !important; /* Further reduced */
         min-height: 80vh;
+        gap: 1rem;
     }
 
     .intro-buttons {
         flex-direction: column;
         width: 100%;
+        gap: 0.8rem;
+        margin: 1rem 0;
     }
 
     .btn {
         width: 100%;
         max-width: 250px;
+        padding: 0.6rem 1.2rem;
     }
 
     .about {
-        padding: 2rem 1rem;
+        padding: 2rem 0.8rem; /* Further reduced */
+        gap: 1.5rem;
     }
 
     .services {
@@ -297,4 +315,25 @@
 .animate-on-scroll.animate-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+
+/* Additional utility class for tighter mobile layouts */
+@media screen and (max-width: 768px) {
+    .mobile-compact {
+        padding: 1rem !important;
+        margin: 0.5rem 0 !important;
+    }
+    
+    /* Ensure no extra spacing on mobile */
+    section {
+        margin-bottom: 0;
+    }
+    
+    /* Compact headings on mobile */
+    h1.my-heading {
+        line-height: 1.1;
+        margin: 0.8rem 0 1.2rem 0;
+    }
 }
