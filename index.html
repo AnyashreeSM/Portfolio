@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/letter-a.png" />
     <title>Anyashree S M - Full Stack Developer</title> 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet"
@@ -25,7 +26,9 @@
     <header class="header"> 
         <nav class="navbar">
             <div class="logo">
-                <h2 class="logo-heading">Anyashree S M</h2>
+                <img src="image/letter-a.png" alt="icon">
+                 <h2 class="logo-heading">Anyashree</h2> 
+                  
             </div>
             <div class="hamburger" id="hamburger"> <!--Mobile menu toggle-->
                 <i class="fas fa-bars hamburger-icon"></i> 
@@ -48,7 +51,7 @@
         <div class="intro">
             <div class="headings">
                 <h3 class="greet-heading">Hello, I'm</h3>
-                <h1 class="my-heading">Anyashree S M</h1>
+                <h1 class="myheading">Anyashree S M</h1>
                 <h4 class="sub-heading">Aspiring Full Stack Developer (PERN).</h4>
             </div>
             <div class="intro-buttons">
@@ -71,64 +74,106 @@
 
     <!-- Portfolio section -->
     <section id="projects" class="projects">
-        <div class="portfolio-heading"> 
-            <h1 class="my-heading text-center">My Projects</h1> 
-        </div> 
-        <div class="portfolio-container">
-            
-            <div class="port-card">
-                 
-                <div class="image">
-                    <img src="image/m.jpg" alt="portfolio">
-                </div>
-                <div class="port-card-content">
-                    <h3 class="greet-heading blue-text">My Portfolio Website</h3>
-                    <p class="small-para blue-text">HTML, CSS, JavaScript</p>
+    <div class="portfolio-heading"> 
+        <h1 class="my-heading text-center">My Projects</h1> 
+    </div> 
+    <div class="portfolio-container">
+        
+        <!-- Project 1 - Portfolio Website (Current Site) -->
+        <div class="port-card clickable-card" data-url="https://portfolio-mukthas-projects-7e55e4c8.vercel.app/" role="button" tabindex="0">
+            <div class="image">
+                <img src="image/e-commerce.png" alt="e-commerce website">
+            </div>
+            <div class="port-card-content">
+                <h3 class="greet-heading blue-text">BuzzBuy e-commerce Website</h3>
+                <div class="project-links">
+                    <a href="" target="_blank" class="project-link live-demo" onclick="event.stopPropagation()">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="" target="_blank" class="project-link github-link" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
             </div>
-
-            <div class="port-card">
-                <div class="image">
-                    <img src="image/c.jpg" alt="todo app">
-                </div>
-                <div class="port-card-content">
-                    <h3 class="greet-heading blue-text">To-Do App (In Progress)</h3>
-                    <p class="small-para blue-text">Learning React & Tailwind CSS</p>
-                </div>
-            </div>
-
-            <div class="port-card">
-                <div class="image">
-                    <img src="image/d.jpg" alt="AI Chatbot">
-                </div>
-                <div class="port-card-content">
-                    <h3 class="greet-heading blue-text">AI Chatbot (Planned)</h3>
-                    <p class="small-para blue-text">Exploring OpenAI API integration</p>
-                </div>
-            </div>
-
-            <div class="port-card">
-                <div class="image">
-                    <img src="image/2.jpg" alt="form project">
-                </div>
-                <div class="port-card-content">
-                    <h3 class="greet-heading blue-text">Basic Form Project</h3>
-                    <p class="small-para blue-text">HTML, CSS, JavaScript validation</p>
-                </div>
-            </div>
-
-            <div class="port-card">
-                <div class="image">
-                    <img src="image/bg-home2.jpg" alt="form project">
-                </div>
-                <div class="port-card-content">
-                    <h3 class="greet-heading blue-text">Advanced Form Project</h3>
-                    <p class="small-para blue-text">JavaScript validation</p>
-                </div>
-            </div>
-
         </div>
-    </section>
+
+        <!-- Project 2 - Morton Dental Website -->
+        <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
+            <div class="image">
+                <img src="image/ai-image-gen.png" alt="ai-image-generator">
+            </div>
+            <div class="port-card-content">
+                <h3 class="greet-heading blue-text">Ai-Image-Generator Website</h3>
+               
+                <div class="project-links">
+                    <a href="#" target="_blank" class="project-link live-demo" onclick="event.stopPropagation()">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" target="_blank" class="project-link github-link" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 - Discovery Dental Website -->
+        <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
+            <div class="image">
+                <img src="image/quick-ai.png" alt="quick-ai">
+            </div>
+            <div class="port-card-content">
+                <h3 class="greet-heading blue-text">Quick-AI Full Stack AI SaaS App (on-going) </h3>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="project-link live-demo" onclick="event.stopPropagation()">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" target="_blank" class="project-link github-link" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 - Movie Recommender System -->
+        <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
+            <div class="image">
+                <img src="image/2.jpg" alt="movie recommender">
+            </div>
+            <div class="port-card-content">
+                <h3 class="greet-heading blue-text">Movie Recommender System</h3>
+                <p class="small-para blue-text">Machine learning-powered app for movie suggestions</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="project-link live-demo" onclick="event.stopPropagation()">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" target="_blank" class="project-link github-link" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5 - Full-Stack Auth App -->
+        <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
+            <div class="image">
+                <img src="image/bg-home2.jpg" alt="auth app">
+            </div>
+            <div class="port-card-content">
+                <h3 class="greet-heading blue-text">Full-Stack Auth App</h3>
+                <p class="small-para blue-text">Secure authentication system with Next.js, MongoDB, JWT</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="project-link live-demo" onclick="event.stopPropagation()">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" target="_blank" class="project-link github-link" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <!--About Section-->
     <section id="about" class="about">
@@ -149,7 +194,7 @@
              </p> 
         </div>
         <div class="about-image">
-          <img src="image/professional-headshot.jpeg" alt="Anyashree S M - Full Stack Developer">
+          <img src="image/my-pic.jpeg" alt="Anyashree S M - Full Stack Developer">
         </div>
     </section>
 
