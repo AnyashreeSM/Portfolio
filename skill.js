@@ -1,4 +1,4 @@
-// Skills Section JavaScript - Add to your script.js
+// Skills Section JavaScript 
 
 // Initialize Skills Section Animations
 function initSkillsAnimations() {
@@ -174,7 +174,7 @@ function initAllSkillsEffects() {
     }, 2000);
 }
 
-// Update navigation to include skills
+
 function updateNavigationWithSkills() {
     const navigationHtml = `
         <li class="menu-list-item"><a class="links" href="#home">Home</a></li>
@@ -192,7 +192,7 @@ function updateNavigationWithSkills() {
     }
 }
 
-// Add this to your existing DOMContentLoaded event listener
+
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize skills effects
     setTimeout(() => {

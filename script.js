@@ -1,4 +1,4 @@
-// Enhanced JavaScript for Portfolio - FIXED VERSION
+
 
 // Initialize EmailJS
 emailjs.init('PwSfSRnbsZRNK8rUN'); 
@@ -6,7 +6,7 @@ emailjs.init('PwSfSRnbsZRNK8rUN');
 // Wait for DOM to load - SINGLE EVENT LISTENER
 document.addEventListener('DOMContentLoaded', function() {
     
-    // HAMBURGER MENU - FIXED AND CONSOLIDATED
+    // HAMBURGER MENU
     const hamburger = document.getElementById('hamburger'); 
     const menu = document.querySelector('.menu'); 
     const navbar = document.querySelector('.navbar');
@@ -272,7 +272,7 @@ function isValidEmail(email) {
 
 
 
-// Add this JavaScript to your script.js file for clickable project cards
+// clickable project cards
 
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (projectTitle.includes('portfolio')) {
                 projectUrl = window.location.href; // Current portfolio site
             } else {
-                // Default behavior - you can add more projects here
+                
                 console.log('No specific URL defined for this project');
                 return;
             }

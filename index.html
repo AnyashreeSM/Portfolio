@@ -4,38 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="image/letter-a.png" />
+
     <title>Anyashree S M - Full Stack Developer</title> 
+
     <!-- Font Awesome for icons -->
     <link rel="stylesheet"
-        href= 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity= 
-"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity= "sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"0
+        referrerpolicy="no-referrer" />
+
+    <!-- linking of css page     -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="mouse.css">
     <link rel="stylesheet" href="skill.css">
+
+
     <!-- Lottie player for animations -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <!--for actually getting the clint info-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 
+
+
 <body>
-    <script src="script.js"></script>
     
     <header class="header"> 
         <nav class="navbar">
+
+            <!-- logo Icon and name -->
             <div class="logo">
                 <img src="image/letter-a.png" alt="icon">
                  <h2 class="logo-heading">Anyashree</h2> 
-                  
             </div>
-            <div class="hamburger" id="hamburger"> <!--Mobile menu toggle-->
+
+            <!--Mobile menu toggle-->
+            <div class="hamburger" id="hamburger"> 
                 <i class="fas fa-bars hamburger-icon"></i> 
                 <i class="fas fa-times cross-icon"></i> 
             </div> 
+
+            <!-- Header section all links -->
             <div class="menu">
                 <ul class="menu-list">
                     <li class="menu-list-item"><a class="links" href="#home">Home</a></li>
@@ -52,17 +65,20 @@
     <!-- Home section -->
     <section id="home" class="hero">
         <div class="intro">
+
             <div class="headings">
                 <h3 class="greet-heading">Hello, I'm</h3>
                 <h1 class="myheading">Anyashree S M</h1>
                 <h4 class="sub-heading">Aspiring Full Stack Developer (PERN).</h4>
             </div>
+
             <div class="intro-buttons">
                 <button class="btn common-btn">Hire Me</button>
                 <button class="btn ghost-btn">Get Resume</button>
             </div>
         </div>
 
+        <!-- Roboat animation  -->
         <div class="hero-right">
             <lottie-player
              src="https://assets10.lottiefiles.com/packages/lf20_1pxqjqps.json"
@@ -77,30 +93,32 @@
 
     <!-- Portfolio section -->
     <section id="projects" class="projects">
-    <div class="portfolio-heading"> 
-        <h1 class="my-heading text-center">My Projects</h1> 
-    </div> 
-    <div class="portfolio-container">
+
+        <div class="portfolio-heading"> 
+            <h1 class="my-heading text-center">My Projects</h1> 
+        </div> 
+
+        <div class="portfolio-container">
         
-        <!-- Project 1 - Portfolio Website (Current Site) -->
-        <div class="port-card clickable-card" data-url="" role="button" tabindex="0">
-            <div class="image">
-                <img src="image/e-commerce.png" alt="e-commerce website">
-            </div>
-            <div class="port-card-content">
-                <h3 class="greet-heading blue-text">BuzzBuy e-commerce Website</h3>
-                <div class="project-links">
-                    <a href="https://anyashreesm.github.io/e-commerceWebsite/" target="_blank" class="project-link live-demo" onclick="event.stopPropagation()">
-                        <i class="fas fa-external-link-alt"></i> Live Demo
-                    </a>
-                    <a href="https://github.com/AnyashreeSM/e-commerceWebsite" target="_blank" class="project-link github-link" onclick="event.stopPropagation()">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
+            <!-- Project 1  -->
+            <div class="port-card clickable-card" data-url="" role="button" tabindex="0">
+                <div class="image">
+                    <img src="image/e-commerce.png" alt="e-commerce website">
+                </div>
+                <div class="port-card-content">
+                    <h3 class="greet-heading blue-text">BuzzBuy e-commerce Website</h3>
+                    <div class="project-links">
+                        <a href="https://anyashreesm.github.io/e-commerceWebsite/" target="_blank" class="project-link live-demo" onclick="event.stopPropagation()">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/AnyashreeSM/e-commerceWebsite" target="_blank" class="project-link github-link" onclick="event.stopPropagation()">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Project 2 - Morton Dental Website -->
+        <!-- Project 2 -->
         <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
             <div class="image">
                 <img src="image/ai-image-gen.png" alt="ai-image-generator">
@@ -119,7 +137,7 @@
             </div>
         </div>
 
-        <!-- Project 3 - Discovery Dental Website -->
+        <!-- Project 3  -->
         <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
             <div class="image">
                 <img src="image/quick-ai.png" alt="quick-ai">
@@ -137,7 +155,7 @@
             </div>
         </div>
 
-        <!-- Project 4 - Movie Recommender System -->
+        <!-- Project 4 -->
         <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
             <div class="image">
                 <img src="image/tributeP.png" alt="quick-ai">
@@ -155,7 +173,7 @@
             </div>
         </div>
 
-        <!-- Project 5 - Full-Stack Auth App -->
+        <!-- Project 5 -->
         <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
             <div class="image">
                 <img src="image/ProductLP.png" alt="quick-ai">
@@ -173,7 +191,7 @@
             </div>
         </div>
 
-
+         <!-- Project 6 -->
         <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
             <div class="image">
                 <img src="image/survey-form.png" alt="quick-ai">
@@ -191,7 +209,7 @@
             </div>
         </div>
 
-
+         <!-- Project 7 -->
         <div class="port-card clickable-card" data-url="#" role="button" tabindex="0">
             <div class="image">
                 <img src="image/technicalDP.png" alt="quick-ai">
@@ -210,168 +228,168 @@
         </div>
 
     </div>
-</section>
+    </section>
 
-<!-- Add this Skills section after About and before Projects -->
-<section id="skills" class="skills">
-    <div class="skills-heading"> 
-        <h1 class="my-heading text-center">Technical Skills</h1> 
-    </div>
-    
-    <div class="skills-container">
-        
-        <!-- Frontend Skills -->
-        <div class="skill-category">
-            <div class="category-icon">
-                <i class="fas fa-code"></i>
-            </div>
-            <h3 class="category-title">Frontend Development</h3>
-            <div class="skills-list">
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">HTML5</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="90"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">CSS3 & Sass</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-percent">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">React.js</span>
-                        <span class="skill-percent">75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="75"></div>
-                    </div>
-                </div>
-            </div>
+    <!--  Skills section -->
+    <section id="skills" class="skills">
+        <div class="skills-heading"> 
+            <h1 class="my-heading text-center">Technical Skills</h1> 
         </div>
         
-        <!-- Backend Skills -->
-        <div class="skill-category">
-            <div class="category-icon">
-                <i class="fas fa-server"></i>
+        <div class="skills-container">
+            
+            <!-- Frontend Skills -->
+            <div class="skill-category">
+                <div class="category-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="category-title">Frontend Development</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS3 & Sass</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React.js (Learning)</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h3 class="category-title">Backend Development</h3>
-            <div class="skills-list">
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Node.js</span>
-                        <span class="skill-percent">75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="75"></div>
-                    </div>
+            
+            <!-- Backend Skills -->
+            <div class="skill-category">
+                <div class="category-icon">
+                    <i class="fas fa-server"></i>
                 </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Express.js</span>
-                        <span class="skill-percent">70%</span>
+                <h3 class="category-title">Backend Development</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="70"></div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Express.js(Learning)</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Python</span>
-                        <span class="skill-percent">80%</span>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Java</span>
-                        <span class="skill-percent">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="70"></div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Database & Tools -->
+            <div class="skill-category">
+                <div class="category-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3 class="category-title">Database & Tools</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PostgreSQL(Learning)</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">MongoDB(Learning)</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">AWS/Cloud(Learning)</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-        
-        <!-- Database & Tools -->
-        <div class="skill-category">
-            <div class="category-icon">
-                <i class="fas fa-database"></i>
-            </div>
-            <h3 class="category-title">Database & Tools</h3>
-            <div class="skills-list">
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">PostgreSQL</span>
-                        <span class="skill-percent">75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="75"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">MongoDB</span>
-                        <span class="skill-percent">65%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="65"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Git & GitHub</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">AWS/Cloud</span>
-                        <span class="skill-percent">60%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="60"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
     
     <!-- Additional Skills Tags -->
     <div class="additional-skills">
-        <h3 class="additional-title">Additional Technologies</h3>
+        <h3 class="additional-title">Additional Technologies(Learning)</h3>
         <div class="tech-tags">
             <span class="tech-tag">Tailwind CSS</span>
             <span class="tech-tag">Bootstrap</span>
@@ -414,153 +432,153 @@
 
 
 
-    <!-- Updated certifications section with your actual certificates -->
-<section id="certifications" class="certifications">
-    <div class="certifications-heading"> 
-        <h1 class="my-heading text-center">Certifications</h1> 
-    </div>
-    
-    <div class="certifications-container">
+    <!-- certifications section -->
+    <section id="certifications" class="certifications">
+        <div class="certifications-heading"> 
+            <h1 class="my-heading text-center">Certifications</h1> 
+        </div>
         
-        <!-- Python Certification -->
-        <div class="cert-card">
-            <div class="cert-icon">
-                <i class="fab fa-python"></i>
-            </div>
-            <div class="cert-content">
-                <h3 class="cert-title">Python (Basic) Certification</h3>
-                <p class="cert-issuer">HackerRank</p>
-                <p class="cert-date">Feb 2025</p>
-                <div class="cert-skills">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Programming</span>
+        <div class="certifications-container">
+            
+            <!-- Python Certification -->
+            <div class="cert-card">
+                <div class="cert-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Python (Basic) Certification</h3>
+                    <p class="cert-issuer">HackerRank</p>
+                    <p class="cert-date">Feb 2025</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Programming</span>
+                    </div>
+                </div>
+                <div class="cert-verify">
+                    <a href="https://www.hackerrank.com/certificates/3fea15ee37fd" target="_blank" class="verify-link">
+                        <i class="fas fa-external-link-alt"></i> Verify
+                    </a>
                 </div>
             </div>
-            <div class="cert-verify">
-                <a href="https://www.hackerrank.com/certificates/3fea15ee37fd" target="_blank" class="verify-link">
-                    <i class="fas fa-external-link-alt"></i> Verify
-                </a>
-            </div>
-        </div>
 
-        
+            
 
-        <!-- Data Analysis -->
-        <div class="cert-card">
-            <div class="cert-icon">
-                <i class="fas fa-chart-bar"></i>
-            </div>
-            <div class="cert-content">
-                <h3 class="cert-title">Data Analysis with Python</h3>
-                <p class="cert-issuer">IBM</p>
-                <p class="cert-date">Aug 2024</p>
-                <div class="cert-skills">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Data Analysis</span>
-                    <span class="skill-tag">Pandas</span>
+            <!-- Data Analysis -->
+            <div class="cert-card">
+                <div class="cert-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Data Analysis with Python</h3>
+                    <p class="cert-issuer">IBM</p>
+                    <p class="cert-date">Aug 2024</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Pandas</span>
+                    </div>
+                </div>
+                <div class="cert-verify">
+                    <a href="https://courses.cognitiveclass.ai/certificates/98df6375bfc84e5691a26a5e226abc06" target="_blank" class="verify-link">
+                        <i class="fas fa-external-link-alt"></i> Verify
+                    </a>
                 </div>
             </div>
-            <div class="cert-verify">
-                <a href="https://courses.cognitiveclass.ai/certificates/98df6375bfc84e5691a26a5e226abc06" target="_blank" class="verify-link">
-                    <i class="fas fa-external-link-alt"></i> Verify
-                </a>
-            </div>
-        </div>
 
-        <!-- Responsive Web Design -->
-        <div class="cert-card">
-            <div class="cert-icon">
-                <i class="fas fa-mobile-alt"></i>
-            </div>
-            <div class="cert-content">
-                <h3 class="cert-title">Responsive Web Design</h3>
-                <p class="cert-issuer">freeCodeCamp</p>
-                <p class="cert-date">Jul 2024</p>
-                <div class="cert-skills">
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">Responsive</span>
+            <!-- Responsive Web Design -->
+            <div class="cert-card">
+                <div class="cert-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Responsive Web Design</h3>
+                    <p class="cert-issuer">freeCodeCamp</p>
+                    <p class="cert-date">Jul 2024</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Responsive</span>
+                    </div>
+                </div>
+                <div class="cert-verify">
+                    <a href="https://freecodecamp.org/certification/fcc2876369d-1946-40a5-ba0d-5604ce9ac226/responsive-web-design" target="_blank" class="verify-link">
+                        <i class="fas fa-external-link-alt"></i> Verify
+                    </a>
                 </div>
             </div>
-            <div class="cert-verify">
-                <a href="https://freecodecamp.org/certification/fcc2876369d-1946-40a5-ba0d-5604ce9ac226/responsive-web-design" target="_blank" class="verify-link">
-                    <i class="fas fa-external-link-alt"></i> Verify
-                </a>
-            </div>
-        </div>
 
-        <!-- SQL & Databases -->
-        <div class="cert-card">
-            <div class="cert-icon">
-                <i class="fas fa-database"></i>
-            </div>
-            <div class="cert-content">
-                <h3 class="cert-title">SQL and Relational Databases</h3>
-                <p class="cert-issuer">IBM</p>
-                <p class="cert-date">Aug 2024</p>
-                <div class="cert-skills">
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Database</span>
-                    <span class="skill-tag">PostgreSQL</span>
+            <!-- SQL & Databases -->
+            <div class="cert-card">
+                <div class="cert-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">SQL and Relational Databases</h3>
+                    <p class="cert-issuer">IBM</p>
+                    <p class="cert-date">Aug 2024</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Database</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="cert-verify">
+                    <a href="https://courses.cognitiveclass.ai/certificates/98df6375bfc84e5691a26a5e226abc06" target="_blank" class="verify-link">
+                        <i class="fas fa-external-link-alt"></i> Verify
+                    </a>
                 </div>
             </div>
-            <div class="cert-verify">
-                <a href="https://courses.cognitiveclass.ai/certificates/98df6375bfc84e5691a26a5e226abc06" target="_blank" class="verify-link">
-                    <i class="fas fa-external-link-alt"></i> Verify
-                </a>
-            </div>
-        </div>
 
-        <!-- Cloud Computing -->
-        <div class="cert-card">
-            <div class="cert-icon">
-                <i class="fas fa-cloud"></i>
-            </div>
-            <div class="cert-content">
-                <h3 class="cert-title">Introduction to Cloud</h3>
-                <p class="cert-issuer">IBM</p>
-                <p class="cert-date">Aug 2024</p>
-                <div class="cert-skills">
-                    <span class="skill-tag">Cloud</span>
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">Deployment</span>
+            <!-- Cloud Computing -->
+            <div class="cert-card">
+                <div class="cert-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Introduction to Cloud</h3>
+                    <p class="cert-issuer">IBM</p>
+                    <p class="cert-date">Aug 2024</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Cloud</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Deployment</span>
+                    </div>
+                </div>
+                <div class="cert-verify">
+                    <a href="https://courses.cognitiveclass.ai/certificates/2113e622e8ef4e249cb037e081ee53bf" target="_blank" class="verify-link">
+                        <i class="fas fa-external-link-alt"></i> Verify
+                    </a>
                 </div>
             </div>
-            <div class="cert-verify">
-                <a href="https://courses.cognitiveclass.ai/certificates/2113e622e8ef4e249cb037e081ee53bf" target="_blank" class="verify-link">
-                    <i class="fas fa-external-link-alt"></i> Verify
-                </a>
-            </div>
-        </div>
-
-       
-
-        <!-- Cybersecurity -->
-        <div class="cert-card">
-            <div class="cert-icon">
-                <i class="fas fa-shield-alt"></i>
-            </div>
-            <div class="cert-content">
-                <h3 class="cert-title">Privacy & Security in Social Media</h3>
-                <p class="cert-issuer">NPTEL</p>
-                <p class="cert-date">Jan-Apr 2025</p>
-                <div class="cert-skills">
-                    <span class="skill-tag">Security</span>
-                    <span class="skill-tag">Privacy</span>
-                    <span class="skill-tag">Social Media</span>
-                </div>
-            </div>
-            <div class="cert-verify">
-                <a href="https://nptel.ac.in/noc/verify" target="_blank" class="verify-link">
-                    <i class="fas fa-external-link-alt"></i> Verify
-                </a>
-            </div>
-        </div>
 
         
 
-    </div>
-</section>
+            <!-- Cybersecurity -->
+            <div class="cert-card">
+                <div class="cert-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Privacy & Security in Social Media</h3>
+                    <p class="cert-issuer">NPTEL</p>
+                    <p class="cert-date">Jan-Apr 2025</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Security</span>
+                        <span class="skill-tag">Privacy</span>
+                        <span class="skill-tag">Social Media</span>
+                    </div>
+                </div>
+                <div class="cert-verify">
+                    <a href="https://nptel.ac.in/noc/verify" target="_blank" class="verify-link">
+                        <i class="fas fa-external-link-alt"></i> Verify
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
     <!--Service section-->
     <section class="services" id="services">
         <div class="services-heading">
@@ -753,8 +771,10 @@
     </footer>
 
     
-
+    <!-- linking of JS Page -->
+    <script src="script.js"></script>
     <script src="mouse.js"></script>
     <script src="skill.js"></script>
+
 </body>
 </html>

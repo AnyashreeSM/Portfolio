@@ -3,11 +3,11 @@
 /* Tablet Styles */
 @media screen and (min-width: 768px) and (max-width: 1024px) { 
     .navbar {
-       padding: 0.8rem 1rem; /* Reduced padding */
+       padding: 0.8rem 1rem; 
     }
     
     .logo { 
-         padding: 0; /* Remove extra padding */
+         padding: 0; 
     } 
 
     .menu {
@@ -71,7 +71,7 @@
     } 
 
     .menu.active {
-        display: flex; /* show menu when active */
+        display: flex; 
     }
 
     .menu-list { 
@@ -110,34 +110,34 @@
     .hero { 
         flex-direction: column;
         text-align: center;
-         padding: 100px 1rem 2rem 1rem !important; /* Reduced top padding from 140px to 100px */
-        min-height: 85vh; /* Reduced from 90vh */
-        gap: 1.5rem; /* Reduced gap */
+         padding: 100px 1rem 2rem 1rem !important; 
+        min-height: 85vh;
+        gap: 1.5rem; 
     }
 
     .intro {
         max-width: 100%;
         text-align: center;
         order: 1;
-        margin-bottom: 1rem; /* Reduced margin */
+        margin-bottom: 1rem;
     }
 
     .hero-right {
         order: 2;
         max-width: 100%;
-         margin-top: 0; /* Remove extra margin */
+         margin-top: 0;
     }
 
     .hero-right lottie-player {
-        max-width: 250px; /* Slightly smaller */
-        height: 300px !important; /* Fixed height */
+        max-width: 250px; 
+        height: 300px !important; 
     }
 
     .intro-buttons { 
         gap: 1rem;
         justify-content: center;
         flex-wrap: wrap;
-         margin: 1.5rem 0; /* Reduced margin */
+         margin: 1.5rem 0; 
     } 
 
     .btn { 
@@ -150,13 +150,13 @@
     .portfolio-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        margin-top: 2rem; /* Reduced margin */
+        margin-top: 2rem; 
     }
 
     /* About Mobile */
     .about { 
         flex-direction: column;
-        padding: 2.5rem 1rem; /* Reduced padding */
+        padding: 2.5rem 1rem; 
         text-align: center;
         gap: 2rem;
         
@@ -165,7 +165,7 @@
     .about-text { 
         width: 100%;
         order: 2;
-         order: 1; /* Text comes first */
+         order: 1; 
     } 
 
     .about-image {
@@ -174,28 +174,28 @@
     }
 
     .about-image img { 
-        width: 80%; /* Slightly smaller */
-        max-width: 280px; /* Reduced max width */
+        width: 80%; 
+        max-width: 280px; 
         border-radius: 15px;
     }
     .projects {
-        padding: 2.5rem 1rem; /* Reduced padding */
+        padding: 2.5rem 1rem; 
     }
  
 
     /* Services Mobile */
     .services { 
-       padding: 2.5rem 1rem; /* Reduced padding */
+       padding: 2.5rem 1rem; 
     } 
 
     .services-content {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-         margin-top: 2rem; /* Reduced margin */
+         margin-top: 2rem; 
     }
 
     .my-card {
-       padding: 2.5rem 1rem; /* Reduced padding */
+       padding: 2.5rem 1rem; 
     }
 
     /* Contact Mobile */
@@ -205,15 +205,15 @@
 
     .contact-content { 
         grid-template-columns: 1fr;
-        gap: 1.5rem; /* Reduced gap */
-        margin-top: 2rem; /* Reduced margin */
+        gap: 1.5rem;
+        margin-top: 2rem; 
     } 
 
     .contact-form-container,
     .contact-details { 
         width: 100%;
-        height: auto; /* Remove fixed height for mobile */
-        min-height: 400px; /* Set minimum height instead */
+        height: auto; 
+        min-height: 400px; 
     } 
 
     /* Footer Mobile */
@@ -266,7 +266,7 @@
 /* Very Small Mobile */
 @media screen and (max-width: 480px) {
     .hero {
-        padding: 90px 0.8rem 1.5rem 0.8rem !important; /* Further reduced */
+        padding: 90px 0.8rem 1.5rem 0.8rem !important; 
         min-height: 80vh;
         gap: 1rem;
     }
@@ -285,7 +285,7 @@
     }
 
     .about {
-        padding: 2rem 0.8rem; /* Further reduced */
+        padding: 2rem 0.8rem; 
         gap: 1.5rem;
     }
 
@@ -340,6 +340,3 @@
         margin: 0.8rem 0 1.2rem 0;
     }
 }
-
-
-

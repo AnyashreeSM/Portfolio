@@ -1,4 +1,4 @@
-// Custom Mouse Cursor Effect JavaScript - Add to your script.js
+// Custom Mouse Cursor Effect JavaScript 
 
 // Initialize custom cursor effect
 function initCustomCursor() {
