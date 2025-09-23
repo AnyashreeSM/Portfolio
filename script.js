@@ -272,3 +272,59 @@ function isValidEmail(email) {
 
 
 
+// Add this JavaScript to your script.js file for clickable project cards
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Make project cards clickable
+    const projectCards = document.querySelectorAll('.port-card');
+    
+    projectCards.forEach(card => {
+        // Add click functionality to each project card
+        card.addEventListener('click', function() {
+            // Get the URL from data attribute or determine based on project
+            let projectUrl = '';
+            
+            // Check the project title to determine which URL to open
+            const projectTitle = this.querySelector('.greet-heading').textContent.toLowerCase();
+            
+            if (projectTitle.includes('buzzbuy') || projectTitle.includes('e-commerce')) {
+                projectUrl = 'https://your-buzzbuy-url.com'; // Replace with actual URL
+            } else if (projectTitle.includes('ai-image-generator') || projectTitle.includes('ai image')) {
+                projectUrl = 'https://your-ai-generator-url.com'; // Replace with actual URL
+            } else if (projectTitle.includes('quick-ai') || projectTitle.includes('saas')) {
+                projectUrl = 'https://your-quick-ai-url.com'; // Replace with actual URL
+            } else if (projectTitle.includes('portfolio')) {
+                projectUrl = window.location.href; // Current portfolio site
+            } else {
+                // Default behavior - you can add more projects here
+                console.log('No specific URL defined for this project');
+                return;
+            }
+            
+            // Open the project in a new tab
+            if (projectUrl) {
+                window.open(projectUrl, '_blank');
+            }
+        });
+        
+        // Add hover effect
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 15px 35px rgba(99, 102, 241, 0.3)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
+        });
+    });
+    
+    // Prevent link clicks from triggering card click
+    const projectLinks = document.querySelectorAll('.project-link');
+    projectLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    });
+});
