@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Inter', sans-serif; 
     font-weight: 400;
@@ -16,6 +17,7 @@ body {
     color: #f8fafc;
     scroll-behavior: smooth;
 }
+
 
 /* Header Navbar Styles */
 .navbar {
@@ -654,8 +656,11 @@ textarea.form-controls {
 }
 
 .my-heading {
-    color: #52baf6;
-    font-size: clamp(2.5rem, 5vw, 4rem); 
+   background: linear-gradient(90deg, #ff6fff, #00d4ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+   
+     font-size: clamp(2.5rem, 5vw, 4rem); 
     font-weight: 700;
     margin: 0;
     line-height: 1.2;
